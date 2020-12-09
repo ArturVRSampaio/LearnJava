@@ -1,7 +1,6 @@
 package com.ArturVRSampaio;
 
-import com.ArturVRSampaio.warmup.sleepln;
-import com.ArturVRSampaio.warmup.monkeyTrouble;
+import com.ArturVRSampaio.warmup.*;
 
 
 public class Main {
@@ -9,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         sleep();
         havetrouble();
+        sumOrDouble();
 
     }
 
@@ -29,6 +29,15 @@ public class Main {
         bSmile = false;
         monkeyTrouble trbl= new monkeyTrouble();
         System.out.println(trbl.trouble(aSmile,bSmile));
+    }
+
+    // sumdouble
+    private static void sumOrDouble() {
+        int a, b;
+        a = 2;
+        b = 2;
+        sumDouble sum= new sumDouble();
+        System.out.println(sum.sum(a,b));
     }
 
 }
