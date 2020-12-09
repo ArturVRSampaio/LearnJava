@@ -1,18 +1,20 @@
 package com.ArturVRSampaio;
 
 import com.ArturVRSampaio.warmup.*;
+import com.ArturVRSampaio.warmup2.*;
 
 
 public class Main {
 
     public static void main(String[] args) {
-        sleep();
-        havetrouble();
-        sumOrDouble();
+        //sleep();
+        //havetrouble();
+        //sumOrDouble();
+        stimes();
 
     }
 
-
+//warmup
     // will sleep more today???
     private static void sleep() {
         boolean weekday, vacation;
@@ -21,7 +23,6 @@ public class Main {
         sleepln slpn= new sleepln();
         System.out.println(slpn.willSleep(weekday,vacation));
     }
-
     // do we have some trouble???
     private static void havetrouble() {
         boolean aSmile, bSmile;
@@ -30,7 +31,6 @@ public class Main {
         monkeyTrouble trbl= new monkeyTrouble();
         System.out.println(trbl.trouble(aSmile,bSmile));
     }
-
     // sumdouble
     private static void sumOrDouble() {
         int a, b;
@@ -40,4 +40,13 @@ public class Main {
         System.out.println(sum.sum(a,b));
     }
 
+//warmup2
+    // stringtimes
+    private static void stimes() {
+        String a= "123";
+        int b= 3;
+
+        stringTimes string= new stringTimes();
+        System.out.println(string.times(a,b));
+    }
 }
